@@ -11,7 +11,7 @@ generator client {
 datasource db {
   provider = "postgresql" // ✅ เปลี่ยนจาก mysql → postgresql
   url      = env("DATABASE_URL")
-  directUrl = env("DIRECT_URL") // ✅ เพิ่ม directUrl เพื่อให้ Prisma สามารถเชื่อมต่อกับ Supabase ได้
+ 
 }
 
 model User {
